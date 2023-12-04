@@ -81,11 +81,6 @@ walk(workDir, (err, files) => {
       const completeDiagram = ["```mermaid"];
       completeDiagram.push("classDiagram\n");
       const [chapter, exercise, isViewModel] = getExercisesInfo(files[0]);
-      // let outputDir = chapter.substring(chapter.indexOf("-") + 1);
-      let outputDir = `../docs/src/exercises/${chapter.substring(
-        chapter.indexOf("-") + 1
-      )}/resources/${exercise}`;
-      outputDir = "./output";
 
       console.log(chapter, exercise, isViewModel);
 

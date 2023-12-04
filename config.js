@@ -37,10 +37,10 @@ const config = {
   ],
 
   // The root directory that must be checked for .cs files.
-  inputDir: "../",
+  inputDir: "./input",
 
   // The directory to which the class diagrams are written.
-  outputDir: "",
+  outputDir: "./output",
 };
 
 module.exports = config;
